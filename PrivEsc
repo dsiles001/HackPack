@@ -1,0 +1,9 @@
+to root:
+
+linPeas:
+  wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh
+  make sure to modify permissions to allow us to execute linpeas.sh:
+    chmod +x linpeas.sh
+
+after linpeas has found a PrivEsc vulnerability, GTFOBins can be used to find out how to exploit the PrivEsc vulnerability:
+  https://gtfobins.github.io/
