@@ -1,4 +1,4 @@
-#Reconnassiance
+# Reconnassiance
 
 - Good old nmap -A
 - ping to see if contact can be made with the target
