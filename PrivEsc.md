@@ -1,6 +1,5 @@
 # Privilege Escalation:
 
-_______________________________________________________________________________
 ## linPeas:
   1. wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh
 
@@ -20,5 +19,4 @@ _______________________________________________________________________________
 2. once we find the groups the a user is a part of, we can use 
     find / -group users -type f 2>/dev/null
 to find the files that are owned by the group/user
-_______________________________________________________________________________
 
