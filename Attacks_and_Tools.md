@@ -9,7 +9,7 @@ Reverse Shell - php:
     https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php
 
 because reverse shells don't spawn in an interactive shell, this command can spawn an interactive shell in the reverse shell:
-    python -c 'import pty;pty.spawn("/bin/bash")'
+    ```python -c 'import pty;pty.spawn("/bin/bash")'```
 
 For more exploits check out this cheat sheet:
     https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
